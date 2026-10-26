@@ -21,8 +21,5 @@ PaperMod header override displays them in a native HTML disclosure menu.
 `/play/` is a Hugo page in this repository, linked from the main navigation.
 The game apps keep their existing repositories and Workers, with more specific
 routes at `/play/ultimate-tic-tac-toe/`, `/play/nes-rs/`, and `/play/snes-rs/`.
-The catalog requires no additional Worker or subdomain. Retired `/nes-rs/` and
-`/snes-rs/` URLs redirect to their `/play/` paths through `static/_redirects` in
-this repository. Deploy these redirects before removing legacy routes from
-the emulator Workers. The tic-tac-toe Worker redirects its former subdomain
-paths to the canonical `/play/` URL and publishes only one asset tree.
+The catalog requires no additional Worker or subdomain. Each game Worker serves
+a single `/play/<game>/` prefix and publishes only its canonical asset tree.
