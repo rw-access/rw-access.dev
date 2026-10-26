@@ -13,11 +13,16 @@ The build initializes the pinned Hugo theme submodules and writes the site to
 `public/`. The Wrangler config routes `rw-access.dev/*` here; more specific
 Workers routes serve the projects hosted under that domain.
 
+Navigation entries come from Hugo's `menu.main` in `config.toml`. A local
+PaperMod header override displays them in a native HTML disclosure menu.
+
 ## Play
 
 `/play/` is a Hugo page in this repository, linked from the main navigation.
 The game apps keep their existing repositories and Workers, with more specific
 routes at `/play/ultimate-tic-tac-toe/`, `/play/nes-rs/`, and `/play/snes-rs/`.
-The catalog requires no additional Worker or subdomain. Deploy the game Workers with their new paths
-before publishing the catalog links. Their previous URLs remain available for
-existing bookmarks and room invitations.
+The catalog requires no additional Worker or subdomain. Retired `/nes-rs/` and
+`/snes-rs/` URLs redirect to their `/play/` paths through `static/_redirects` in
+this repository. Deploy these redirects before removing legacy routes from
+the emulator Workers. The tic-tac-toe Worker redirects its former subdomain
+paths to the canonical `/play/` URL and publishes only one asset tree.

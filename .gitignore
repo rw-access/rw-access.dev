@@ -1,5 +1,6 @@
 /public/
 /resources/
+/.wrangler/
 /assets/js/
 /hugo_stats.json
 .DS_Store

@@ -1,0 +1,5 @@
+# The portfolio owns redirects from retired emulator URLs.
+/nes-rs /play/nes-rs/ 308
+/snes-rs /play/snes-rs/ 308
+/nes-rs/* /play/nes-rs/:splat 308
+/snes-rs/* /play/snes-rs/:splat 308

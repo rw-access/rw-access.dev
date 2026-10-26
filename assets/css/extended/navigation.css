@@ -1,0 +1,70 @@
+.site-menu {
+    position: relative;
+    align-self: center;
+    margin: 0 var(--gap);
+    line-height: 1.4;
+}
+
+.site-menu summary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: var(--radius);
+    cursor: pointer;
+    list-style: none;
+}
+
+.site-menu summary::-webkit-details-marker {
+    display: none;
+}
+
+.site-menu summary:hover,
+.site-menu[open] summary,
+.site-menu #menu a:hover {
+    background: var(--code-bg);
+}
+
+.site-menu summary:focus-visible,
+.site-menu #menu a:focus-visible {
+    outline: 2px solid var(--primary);
+    outline-offset: 3px;
+}
+
+.site-menu .menu-icon-close,
+.site-menu[open] .menu-icon-open,
+.site-menu:not([open]) > #menu {
+    display: none;
+}
+
+.site-menu[open] .menu-icon-close {
+    display: block;
+}
+
+.site-menu #menu {
+    position: absolute;
+    z-index: 20;
+    top: calc(100% + 8px);
+    inset-inline-end: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: min(220px, calc(100vw - 2 * var(--gap)));
+    margin: 0;
+    padding: 8px;
+    overflow: visible;
+    background: var(--theme);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: 0 8px 24px rgb(0 0 0 / 12%);
+}
+
+.site-menu #menu li + li {
+    margin-inline-start: 0;
+}
+
+.site-menu #menu a {
+    padding: 10px 12px;
+    border-radius: 4px;
+}
