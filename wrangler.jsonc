@@ -5,6 +5,7 @@
     "directory": "./public"
   },
   "routes": [
-    { "pattern": "rw-access.dev/*", "zone_name": "rw-access.dev" }
+    { "pattern": "rw-access.dev/*", "zone_name": "rw-access.dev" },
+    { "pattern": "www.rw-access.dev/*", "zone_name": "rw-access.dev" }
   ]
 }
