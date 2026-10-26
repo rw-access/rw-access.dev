@@ -12,3 +12,12 @@ Cloudflare **Settings → Builds**, use:
 The build initializes the pinned Hugo theme submodules and writes the site to
 `public/`. The Wrangler config routes `rw-access.dev/*` here; more specific
 Workers routes serve the projects hosted under that domain.
+
+## Play
+
+`/play/` is a Hugo page in this repository, linked from the main navigation.
+The game apps keep their existing repositories and Workers, with more specific
+routes at `/play/ultimate-tic-tac-toe/`, `/play/nes-rs/`, and `/play/snes-rs/`.
+The catalog requires no additional Worker or subdomain. Deploy the game Workers with their new paths
+before publishing the catalog links. Their previous URLs remain available for
+existing bookmarks and room invitations.

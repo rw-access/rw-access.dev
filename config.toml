@@ -46,6 +46,12 @@ theme = "papermod"
     url = "/experience/"
     weight = 1
 
+  [[menu.main]]
+    identifier = "play"
+    name = "Play"
+    url = "/play/"
+    weight = 2
+
 #   [[menu.main]]
 #     identifier = "projects"
 #     name = "Projects"

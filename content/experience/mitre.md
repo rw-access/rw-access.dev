@@ -16,7 +16,7 @@ During my time at [MITRE](https://www.mitre.org), I contributed to several impac
 ### Senior Cyber Security Engineer
 _Apr 2015 - Jan 2017_
 
-- **CASCADE Project Lead**: Created and led development of an application to automatically correlate and triage detected malicious activity on endpoints.
+- **CASCADE Project Lead**: Created and led development of an application to automatically correlate and triage detected malicious activity on endpoints. ([demo](https://rw-access.dev/cascade/))
 - **Adversary Emulation**: Performed red teaming for MITRE and government sponsors, leveraging ATT&CK&reg; and novel techniques to improve organizational resilience.  
 - **Windows Sensor Development**: Designed and implemented a Windows endpoint sensor to detect and prevent malicious credential access.
 - **CALDERA Development**: Developed and patented CALDERA, a platform to automate adversary emulation based on ATT&CK&reg; techniques.  
