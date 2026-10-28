@@ -20,10 +20,19 @@
     display: none;
 }
 
-.site-menu summary:hover,
-.site-menu[open] summary,
-.site-menu #menu a:hover {
+.site-menu[open] summary {
     background: var(--code-bg);
+}
+
+.site-menu #menu a:active {
+    background: var(--code-bg);
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .site-menu summary:hover,
+    .site-menu #menu a:hover {
+        background: var(--code-bg);
+    }
 }
 
 .site-menu summary:focus-visible,
